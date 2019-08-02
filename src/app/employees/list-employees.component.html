@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="card vcenter" *ngFor="let emp of employees">
+        <div class="card-heading">
+            <h3 class="card-title">{{emp.name}}</h3>
+        </div>
+        <div class="card-body">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img [src]="emp.photoPath" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                Gender
+                            </div>
+                            <div class="col-md-6">
+                                : {{emp.gender}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                DOB
+                            </div>
+                            <div class="col-md-6">
+                                : {{emp.dateOfBirth | date}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                Gender
+                            </div>
+                            <div class="col-md-6">
+                                : {{emp.gender}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                Gender
+                            </div>
+                            <div class="col-md-6">
+                                : {{emp.gender}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
